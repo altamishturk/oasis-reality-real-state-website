@@ -33,7 +33,7 @@ const Home = () => {
                 Dashboard
             </Typography>
 
-            <Box mt="20px" display="flex" flexWrap="wrap" gap={4}>
+            <Box mt="20px" maxWidth={"100%"} display="flex" flexWrap="wrap" gap={4}>
                 <PieChart
                     title="Properties for Sale"
                     value={684}

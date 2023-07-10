@@ -16,8 +16,12 @@ import AgentCard from "./agent/AgentCard";
 // home
 import TopAgent from "./home/TopAgent";
 
+// layout 
+import { Sider } from "./layout";
+
 
 export {
+    Sider,
     Profile,
     PropertyCard,
     CustomButton,

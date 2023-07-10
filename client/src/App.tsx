@@ -22,7 +22,7 @@ import dataProvider from "@refinedev/simple-rest";
 import routerProvider from "@refinedev/react-router-v6/legacy";
 import axios, { AxiosRequestConfig } from "axios";
 import { Title, Sider, Layout, Header } from "components/layout";
-import { ColorModeContextProvider } from "./contexts/color-mode";
+// import { ColorModeContextProvider } from "./contexts/color-mode";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
 
@@ -128,7 +128,8 @@ function App() {
     };
 
     return (
-        <ColorModeContextProvider>
+        <>
+        {/* <ColorModeContextProvider> */}
             <CssBaseline />
             <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
             <RefineSnackbarProvider>
@@ -179,7 +180,8 @@ function App() {
                     DashboardPage={Home}
                 />
             </RefineSnackbarProvider>
-        </ColorModeContextProvider>
+        {/* </ColorModeContextProvider> */}
+        </>
     );
 }
 

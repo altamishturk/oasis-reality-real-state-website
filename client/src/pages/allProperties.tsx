@@ -163,7 +163,7 @@ const AllProperties = () => {
 
             
 
-            <Box mt="20px" sx={{ display: "flex", sm:{justifyContent: "center"}, flexWrap: "wrap", gap: 3 }}>
+            <Box mt="20px" sx={{ display: "flex",justifyContent: "center", flexWrap: "wrap", gap: 3 }} >
                 {allProperties?.map((property) => (
                     <PropertyCard
                         key={property._id}
