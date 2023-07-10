@@ -4,6 +4,7 @@ import PropertyCard from "./common/PropertyCard";
 import CustomButton from "./common/CustomButton";
 import Loading from "./common/Loading";
 import Error from "./common/Error";
+import Map from "./common/Map";
 
 // charts
 import PieChart from "./charts/PieChart";
@@ -32,4 +33,5 @@ export {
     TopAgent,
     Loading,
     Error,
+    Map
 };

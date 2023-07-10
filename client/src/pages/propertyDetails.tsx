@@ -10,7 +10,8 @@ import Phone from "@mui/icons-material/Phone";
 import Place from "@mui/icons-material/Place";
 import Star from "@mui/icons-material/Star";
 
-import { CustomButton, Error, Loading } from "components";
+
+import { CustomButton, Error, Loading, Map } from "components";
 
 function checkImage(url: any) {
     const img = new Image();
@@ -58,6 +59,8 @@ const PropertyDetails = () => {
             );
         // }
     };
+
+      
 
     return (
         <Box
@@ -302,17 +305,10 @@ const PropertyDetails = () => {
                             />
                         </Stack>
                     </Stack>
-
-                    <Stack>
-                        <img
-                            src="https://serpmedia.org/scigen/images/googlemaps-nyc-standard.png?crc=3787557525"
-                            width="100%"
-                            height={306}
-                            alt="img"
-                            style={{ borderRadius: 10, objectFit: "cover" }}
-                        />
-                    </Stack>
-
+                    {/* map  */}
+                    <Box sx={{width: "100%", height: "340px"}}>
+                        <Map />
+                    </Box>
                     <Box>
                         <CustomButton
                             title="Book Now"
@@ -328,3 +324,4 @@ const PropertyDetails = () => {
 };
 
 export default PropertyDetails;
+
