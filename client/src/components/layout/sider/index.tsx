@@ -359,7 +359,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                         xs: "none",
                         md: "block",
                     },
-                    transition: "width 0.3s ease",
+                    transition: "width 0.3s ease"
                 }}
             />
             <Box
@@ -454,9 +454,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                     sx={{
                         display: { xs: "block", md: "none" },
                         position: "fixed",
-                        top: "64px",
-                        left: "0px",
-                        borderRadius: "0 6px 6px 0",
+                        top: "7px",
+                        left: "8px",
+                        borderRadius: "6px",
                         bgcolor: "#475be8",
                         zIndex: 1199,
                         width: "36px",
